@@ -8,9 +8,10 @@
 4. [Git-cli](https://git-scm.com/downloads).
 
 
-##### Creating conda environment
-> conda create -p venv python==3.7 -y
-
+Creating conda environment
+'''
+conda create -p venv python==3.7 -y
+'''
 
 '''
 conda activate venv/
@@ -24,7 +25,7 @@ conda activate venv
 pip install -r requirements.txt
 '''
 
-##### To Add Files to git
+To Add Files to git
 '''
 git add
 '''
@@ -35,26 +36,27 @@ git add <file_name>
 
 > Note :To Ignore file or folder from git we can write name of file/folder in.gitignore file
 
-##### To Check the git status
-> git status
+To Check the git status
+'''
+git status
+'''
 
-
-##### To check all version maintained by git
+To check all version maintained by git
 '''
 git log
 '''
 
-###### To create version/commit all changes by git:
+To create version/commit all changes by git:
 '''
 git commit-m "message"
 '''
 
-##### To Send version/changes to github
+To Send version/changes to github
 '''
 git push origin main
 '''
 
-##### To Check remote url
+To Check remote url
 '''
 git remote -v
 '''
