@@ -45,44 +45,44 @@ git add < file name >
 
 > Note :To Ignore file or folder from git we can write name of file/folder in.gitignore file
 
-# To Check the git status
+#### To Check the git status
 
 '''
 git status
 '''
 
-# To check all version maintained by git
+#### To check all version maintained by git
 
 '''
 git log
 '''
 
-# To create version/commit all changes by git:
+#### To create version/commit all changes by git:
 
 '''
 git commit-m "message"
 '''
 
-# To Send version/changes to github
+#### To Send version/changes to github
 
 '''
 git push origin main
 '''
 
-# To Check remote url
+#### To Check remote url
 
 '''
 git remote -v
 '''
 
-# To setup CI/CD pipeline in heroku we need 3 information
+#### To setup CI/CD pipeline in heroku we need 3 information
 
 1. Heroku_Email = 'ismail46h.shaikh@gmail.com'.
 2. Heroku_API_Key = <>.
 3. Heroku_App_Name = machine-learning-practice.
 
 
-# BUILD DOCKER IMAGE
+#### BUILD DOCKER IMAGE
 
 '''
 docker build -t <image_name>:<tagname> .
@@ -91,25 +91,25 @@ docker build -t <image_name>:<tagname> .
 > Note: Image name for docker must be lowercase
 
 
-# To list docker image
+#### To list docker image
 
 '''
 docker images
 '''
 
-# Run Docker image
+#### Run Docker image
 
 '''
 docker run -p 5000:5000 -e PORT= 5000
 '''
 
-# To Check Running container in docker
+#### To Check Running container in docker
 
 '''
 docker ps
 '''
 
-# To stop docker container
+#### To stop docker container
 
 '''
 docker stop <container_id>
