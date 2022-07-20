@@ -29,3 +29,7 @@ DATA_INGESTION_TRAIN_DIR_KEY = "ingested_train_dir"
 DATA_INGESTION_TEST_DIR_KEY = "ingested_test_dir"
 
 
+# Data Validation related variable
+
+
+

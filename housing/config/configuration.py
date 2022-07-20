@@ -1,4 +1,5 @@
 
+from tkinter import E
 from housing.entity.config_entity import DataIngestionConfig, DataValidationConfig, DataTransformationConfig, ModelTrainerConfig,\
                                             ModelEvaluationConfig, ModelPusherConfig, TrainingPipelineConfig
 
@@ -74,11 +75,21 @@ class Configuration:
             return data_ingestion_config
             
         except Exception as e:
-            raise HousingException(e,sys) from E
+            raise HousingException(e,sys) from e
     
+
     def get_data_validation_config(self) ->DataValidationConfig:
-    +    pass
+        try:
+            schema_file_path = None
+            data_validation_config = DataValidationConfig(
+                schema_file_path = schema_file_path
+                )
+            return data_validation_config
+
+        except Exception as e:
+            raise HousingException(e,sys) from e 
     
+
     def get_data_transformation_config(self) ->DataTransformationConfig:
         pass
     
@@ -103,7 +114,7 @@ class Configuration:
             logging.info(f"Training Pipeline Config: {training_pipeline_config}")
             return training_pipeline_config
         except Exception as e:
-            raise HousingException(e,sys) as e
+            raise HousingException(e,sys) from e
         
             
 
